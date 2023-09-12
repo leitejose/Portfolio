@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Poppins:ital,wght@0,600;0,700;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&family=IM+Fell+Double+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Inter:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,700;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /*faz com que a largura e altura do elemento não sejam alteradas quando adicionamos padding e border*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container {
+    margin-top: 11vh;
+}
+
+navbar {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li .nav-link {
+
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.row {
+    justify-content: center;
+}
+
+H1 {
+    font-size: 2rem;
+}
+
+.btn-primary {
+    background-color: #000 !important;
+    border-radius: 1rem !important;
+    border: none !important;
+}
+
+/*About*/
+.about-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-fluid .cover-heading,
+.card-group .cover-heading,
+.skills-section .cover-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.progress {
+    width: 90vw;
+    margin: 0.5rem;
+}
+
+.progress-technologie {
+    width: 90vw;
+    margin: 2rem 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 18fr 1fr;
+    align-items: center;
+
+}
+
+.skills-section {
+    padding: 1rem 0 0 0;
+
+}
+
+
+/*Projects*/
+.card-group {
+    width: 100vw;
+    text-align: center;
+    padding: 3rem 0 6rem 0;
+
+}
+
+.card {
+    margin-bottom: 1rem;
+    min-width: 12rem!important;
+    max-width: 18rem!important;
+}
+/*footer*/
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #808080;
+}
+.social-media{
+    margin: 1rem;
+}
+#link-by-jose, .media{ color: #808080;
+    text-decoration: none !important;
+}
+/*Responsive*/
+@media screen and (min-width: 375px) {
+.about-section{
+    margin-top: 1.5rem;
+}
+
+
+}
+@media screen and (min-width: 575px) {
+
+    .about-section {
+        margin-top: 5.5rem;
+    }
+    .card-deck{
+        flex-flow: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    #initial-text {
+        max-width: 70vw !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    #initial-text {
+        max-width: 40vw !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    #text-group {
+        padding-top: 4rem !important;
+    }
+
+    .btn-primary {
+        font-size: 1.0rem !important;
+        width: 15rem;
+    }
+
+    .container {
+        padding-bottom: 8rem;
+    }
+
+    .about-section {
+
+        padding-bottom: 5rem;
+    }
+    .about-section h1{
+        text-align: left!important;
+        align-self: flex-start;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .container-fluid .text-wrap{
+        padding-bottom: 5rem;
+    }
+
+    .text-wrap {
+        max-width: 40vw !important;
+        text-align: center !important;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-section{
+        padding-top: 4rem;
+        justify-content: center;
+    }
+    
+}
