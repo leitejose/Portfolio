@@ -218,5 +218,16 @@ footer{
         padding-top: 4rem;
         justify-content: center;
     }
+    .card-deck{
+        flex-flow: wrap;
+        max-width: 85vw;
+        padding: 2rem;
+    }
+    .card{
+        margin: 1rem;
+        min-width: 14rem!important;
+        max-width: 20rem!important;
+    }
     
-}
+    }
+
